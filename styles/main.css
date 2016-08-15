@@ -13,16 +13,17 @@ html {
 
 .container {
     min-height: 100%;
-    min-width:  100%;
-    background-color: pink;
+    width:  100%;
+    /background-color: pink;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     color: black;
+    color: #0c5c73;
 }
 
 .nav {
     width: 100%;
-    height: 70px;
+    height: 80px;
     display: inline-block;
     background-color: white;
     
@@ -64,4 +65,84 @@ li:last-child {
 
 li:hover {
     border-bottom: solid 3px #0c5c73;
+}
+
+.promo {
+    display: table;
+    width: 100%;
+    height: 450px;
+}
+
+.promo-left {
+    display: table-cell;
+    height: 50px;
+    left: 0;
+    font-size: 50px;
+    padding: 0 20px;
+    color: #0c5c73; 
+    z-index: 100;
+    vertical-align: middle;
+}
+
+.promo-right {
+    display: table-cell;
+    height: 50px;
+    right: 0;
+    font-size: 50px;
+    padding: 0 20px;
+    color: #0c5c73; 
+    z-index: 100;
+    vertical-align: middle;
+}
+
+.promo-left:hover,
+.promo-right:hover {
+    cursor: pointer;
+}
+
+.promo-middle {
+    display: table-cell;
+    height: inherit;
+    width: 100%;
+    background-color: pink;
+}
+
+.selling-points {
+    width: 100%;
+    padding-bottom: 50px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+}
+
+.selling-points {
+    padding-top: 20px;
+}
+
+.points {
+    width: 80%;
+    margin: auto;
+}
+
+.why {
+    width: 700px;
+    float: left;
+    padding: 40px;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+.mission {
+    width: 400px;
+    float: left;
+    padding: 40px;
+    text-align: justify;
+}
+
+.program {
+    width: 100%;
+    height: 450px;
+   / background-color: salmon;
 }
