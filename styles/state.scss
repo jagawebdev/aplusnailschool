@@ -19,7 +19,6 @@ html {
 .container {
     min-height: 100%;
     width:  100%;
-    /background-color: pink;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     color: black;
@@ -125,6 +124,30 @@ html {
     clear: both;
 }
 
+.hero {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: $light-blue;
+    padding: 100px 0;
+    letter-spacing: $letter-spacing;
+    line-height: 24px;
+    text-align: center;
+}
+
+.hero-container {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 60px auto;
+    background-color: white;
+}
+
+.board {
+    text-align: left;
+}
+
+
 
 
 
@@ -142,7 +165,7 @@ html {
 
 footer {
     background-color: black;
-    color:gray;
+    color: gray;
     padding: 10px;
     letter-spacing: 0.06em;
     line-height: 24px;
