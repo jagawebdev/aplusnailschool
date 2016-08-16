@@ -3,6 +3,48 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.board {
+  background: white;
+  padding: 30px 15px;
+  width: 60%;
+  margin: 0 auto; }
+  .board .line {
+    border-top: solid black 1px;
+    padding-top: 40px; }
+    .board .line li {
+      list-style: none; }
+
+.state-logo {
+  width: 480px;
+  height: 112px;
+  margin: 0 auto;
+  background: url(../images/state-logo.png) center center no-repeat;
+  background-size: cover; }
+
+.left {
+  text-align: left; }
+
+.bold {
+  font-weight: bold; }
+
+.indent30 {
+  text-indent: 30px; }
+
+.indent60 {
+  text-indent: 60px; }
+
+@media screen and (max-width: 320px) {
+  .state-logo {
+    width: 280px;
+    height: 60px; }
+
+  .board {
+    width: 100%; } }
 html {
   min-height: 100%;
   min-width: 100%;
@@ -117,9 +159,6 @@ html {
   margin: 60px auto;
   background-color: white; }
 
-.board {
-  text-align: left; }
-
 footer {
   background-color: black;
   color: gray;
@@ -153,6 +192,9 @@ footer {
 
   .hamburger {
     display: inline-block; }
+
+  .hero-container {
+    width: 100%; }
 
   .footer-info,
   .footer-hours {

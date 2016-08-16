@@ -3,7 +3,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+@import "stateboard";
 @import "mixins";
 $letter-spacing: 0.06em;
 $light-blue: #e4f1fe;
@@ -143,9 +143,6 @@ html {
     background-color: white;
 }
 
-.board {
-    text-align: left;
-}
 
 
 
@@ -204,6 +201,10 @@ footer {
     
     .hamburger {
         display: inline-block;
+    }
+    
+    .hero-container {
+        width: 100%;
     }
     
     .footer-info,
