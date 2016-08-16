@@ -18,7 +18,6 @@ html {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     color: black;
-    color: #0c5c73;
 }
 
 .nav {
@@ -26,6 +25,9 @@ html {
     height: 80px;
     display: inline-block;
     background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 200;
     
 }
 
@@ -70,7 +72,7 @@ li:hover {
 .promo {
     display: table;
     width: 100%;
-    height: 450px;
+    height: 500px;
 }
 
 .promo-left {
@@ -112,37 +114,142 @@ li:hover {
     padding-bottom: 50px;
     line-height: 24px;
     letter-spacing: 0.06em;
-}
-
-.selling-points {
-    padding-top: 20px;
+    display: inline-block;
 }
 
 .points {
+    position: relative;
     width: 80%;
     margin: auto;
 }
 
 .why {
-    width: 700px;
+    position: relative;
+    width: 65%;
     float: left;
-    padding: 40px;
+    padding: 50px;
     text-align: justify;
 }
+
 
 h1 {
     text-align: center;
 }
 
 .mission {
-    width: 400px;
+    position: relative;
+    width: 35%;
     float: left;
-    padding: 40px;
+    padding: 50px;
     text-align: justify;
 }
 
 .program {
     width: 100%;
-    height: 450px;
-   / background-color: salmon;
+    background-color: #e4f1fe;
+    padding: 40px 0;
+    letter-spacing: 0.06em;
+    line-height: 24px;
 }
+
+.program-list {
+    width: 80%;
+    margin: auto;
+}
+
+.list {
+    display: inline-block;
+    width: 260px;
+    background-color: white;
+    margin: 10px 10px 20px 10px;
+    border-radius: 5px;
+    padding: 1px 20px 20px 20px;
+    -webkit-box-shadow: 4px 4px 15px -7px rgba(87,86,87,1);
+    -moz-box-shadow: 4px 4px 15px -7px rgba(87,86,87,1);
+    box-shadow: 4px 4px 15px -7px rgba(87,86,87,1);
+}
+
+.button-title {
+    color: white;
+    padding: 10px 5px;
+    
+}
+
+.button {
+    width: 270px;
+    margin: auto;
+    background-color: #fa4542;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 0px 0px rgba(0,0,0,0.75);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    color:gray;
+    padding: 10px;
+    letter-spacing: 0.06em;
+    line-height: 24px;
+}
+
+.footer-content {
+    width: 80%;
+    margin: auto;
+}
+
+.footer-info {
+    width: 50%;
+     float: left;
+}
+
+.footer-hours {
+    width:  50%;
+     float: left;
+}
+
+.copyright {
+    background-color: pink;
+    border-top: solid gray 1px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    .navlist {
+        display: none;
+    }
+    
+    .points,
+    .why,
+    .mission{
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .program-list {
+        width: 100%;
+        margin: auto;
+    }
+}
+
