@@ -129,7 +129,7 @@ html {
     position: relative;
     width: 100%;
     background-color: $light-blue;
-    padding: 100px 0;
+    padding: 130px 0 10px 0;
     letter-spacing: $letter-spacing;
     line-height: 24px;
     text-align: center;
@@ -141,16 +141,46 @@ html {
     width: 80%;
     margin: 60px auto;
     background-color: white;
+    @include border-radius(5px);
 }
 
+.board-link {
+    text-decoration: none;
+    color: black;
+    letter-spacing: $letter-spacing;
+    line-height: 24px;
+    text-transform: uppercase;
+}
 
+.state-nav {
+    display: block;
+    position: relative;
+}
 
+.board-nav {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 70px;
+    background-color: $light-blue;
+    padding-top: 10px;
+    border: solid white 1px;
+    &:hover {
+        cursor: pointer;
+        background-color: white;
+    }
+}
 
+.board-nav2,
+.board-nav4 {
+    padding-top: 22px;
+}
 
-
-
-
-
+.active-nav {
+    background-color: white;
+    pointer-events: none;
+   cursor: pointer;
+}
 
 
 
@@ -205,6 +235,10 @@ footer {
     
     .hero-container {
         width: 100%;
+    }
+    
+    .board-nav {
+    width: 100%;
     }
     
     .footer-info,
