@@ -65,13 +65,10 @@ html {
     line-height: 55px;
 }
 
-.navlist li:last-child {
-    border-right: none;
-}
-
 .navlist li:hover {
     border-bottom: solid 3px black;
 }
+
 
 .hamburger {
     display: none;
