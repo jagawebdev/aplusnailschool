@@ -204,7 +204,7 @@ html {
   padding-left: 0; }
 
 .dot {
-  color: white;
+  color: rgba(0, 0, 0, 0.3);
   display: inline;
   font-size: 30px;
   margin-right: 5px;
@@ -355,7 +355,15 @@ h1 {
   height: 120px;
   border-radius: 100px;
   background-color: pink;
-  border: solid white 2px; }
+  border: solid white 3px; }
+
+.inst1 {
+  background: url(../images/instructor1.png) center center no-repeat;
+  background-size: cover; }
+
+.inst2 {
+  background: url(../images/instructor2.png) center center no-repeat;
+  background-size: cover; }
 
 .reviews {
   position: relative;

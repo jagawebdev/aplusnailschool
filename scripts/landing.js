@@ -25,17 +25,17 @@ $(document).ready(function() {
             .appendTo('#slideshow');
         },  6000);
 
-        $("#review > div:gt(0)").hide();
+        $("#reviews > div:gt(0)").hide();
          setInterval(function() { 
-          $('#review > div:first')
+          $('#reviews > div:first')
           .fadeOut(1000)
           .next()
           .delay(1000)
             .fadeIn(2000)
             .end()
             .delay(1000)
-            .appendTo('#review');
-        },  6000);
+            .appendTo('#reviews');
+        },  10000);
     
     
 
