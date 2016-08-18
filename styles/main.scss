@@ -118,8 +118,13 @@ html {
 }
 
 .promo {
+     display: block;
+    position: relative;
     width: 100%;
     height: 500px;
+    padding: 80px 0 0 0;
+    letter-spacing: $letter-spacing;
+    line-height: 24px;
 }
 
 .promo-middle {
@@ -127,7 +132,97 @@ html {
     position: relative;
     height: inherit;
     width: 100%;
-    background-color: pink;
+}
+
+.promo-slide {
+    width: inherit;
+    height: inherit;
+}
+
+.promo1 {
+    background: url(../images/promo-simple.jpg) center center;
+    background-size: cover;
+}
+
+.promo2 {
+    background: url(../images/promo-facebook.jpg) center center;
+    background-size: cover;
+}
+
+.slide-title {
+     color: white;
+}
+
+.slide-button {
+    position: relative;
+    width: 270px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    border: solid white 1px;
+}
+
+.slide-button:hover {
+    cursor: pointer;
+    background-color: white;
+    border: solid white 1px;
+    color: black;
+}
+
+.slide-button:hover .slide-title {
+    color: black;
+}
+
+.slide-link {
+    text-decoration: none;
+}
+
+.slide {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        line-height: 60px;
+        height: 20px;
+    }
+    p {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+.slide1 {
+    width: 70%;
+    margin: 20px auto auto auto;
+}
+
+.slide2 {
+    width: 600px;
+    float: right;
+    margin: 20px 150px;
+}
+
+.button-title {
+    color: black;
+}
+
+.button {
+    position: relative;
+    width: 270px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    border: solid black 1px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: white;
+    border: solid white 1px;
+}
+
+.button-link {
+    text-decoration: none;
 }
 
 .slider-nav {
@@ -137,6 +232,7 @@ html {
     bottom: 0;
     color: black;
     font-weight: 100;
+    z-index: 200;
 }
 
 .arrow-prev,
@@ -265,28 +361,6 @@ h1 {
     clear: both;
 }
 
-.button-title {
-    color: black;
-}
-
-.button {
-    position: relative;
-    width: 270px;
-    margin: 20px auto 0 auto;
-    text-align: center;
-    border: solid black 1px;
-}
-
-.button:hover {
-    cursor: pointer;
-    background-color: white;
-    border: solid white 1px;
-}
-
-.button-link {
-    text-decoration: none;
-}
-
 .instructor {
     position: relative;
     width: 100%;
@@ -369,6 +443,10 @@ h1 {
     margin: auto;
 }
 
+.quote {
+        font-size: 24px;
+    }
+
 footer {
     background-color: black;
     color:gray;
@@ -411,6 +489,38 @@ footer {
         display: inline-block;
     }
     
+    .slide1 {
+        width: 100%;
+    }
+    
+    .slide2 {
+        margin: 20px auto;
+        width: 300px;
+    }
+    
+    .slide{
+        h1 {
+            font-size: 36px;
+            color: black;
+        }
+        p{
+            color:black;
+        }
+        .slide-button {
+        border: solid black 1px;
+        }
+        .slide-title {
+            color: black;
+            &:hover {
+                color: black;
+            }
+        }
+        .slide-button:hover {
+        cursor: pointer;
+        background-color: white;
+        border: solid white 1px;
+        }
+    }
     
     
     .points,
@@ -452,6 +562,14 @@ footer {
         display: inline-block;
     }
     
+    .slide1 {
+        width: 100%;
+    }
+    
+    .slide2 {
+    margin: 20px 0;
+    }
+
     .points{
         width: 80%;
     }
@@ -484,6 +602,10 @@ footer {
     .navlist li {
     padding: 0 8px;
     }
+    
+    .slide2 {
+    margin: 20px 0;
+}
 
     .points {
         width: 80%;

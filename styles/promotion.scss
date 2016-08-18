@@ -22,6 +22,7 @@ html {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     color: black;
+    background-color: $light-blue;
 }
 
 .nav {
@@ -138,73 +139,28 @@ html {
 .hero-container {
     display: block;
     position: relative;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
-.contact-href {
-    color: black;
-    &:hover .ion {
-        background-color: black;
-        color: white;
-        cursor: pointer;
-    }
-}
-
-.contact-info {
+.list {
     position: relative;
     display: block;
-    width: 50%;
-    text-align: left;
-    padding: 20px 0;
     float: left;
-}
-
-.info {
-    display: inline-block;
     width: 100%;
-    opacity: 0;
-    @include transform(scale(0.9), translateY(3rem));
-    @include transition(0.2s, 0.25s, ease-in-out);
-}
-
-.show {
-    opacity: 1;
-    @include transform(scale(1), translateY(0));
-}
-
-.info-left {
-    padding: 20px 0 0 0;
-}
-
-.fix {
-    padding-top: 30px;
-}
-
-.ion {
-    display: inline-block;
-    text-align: center;
-     font-size: 30px;
-     background-color: white;
-     color: black;
-     border-radius: 50% 50%;
-     display: inline-block;
-     width: 55px;
-     height: 55px;
-     line-height: 55px;
-     margin: 15px 30px 15px 0;
-     float: left;
-}
-
-.map {
-    float: right;
-    width: 50%;
-    margin: 60px auto;
-    border: white solid 10px;
+    background-color: #eb2351;
+    background: url(../images/promo-simple.jpg) center center no-repeat;
+    background-size: cover;
+    margin: 30px 0;
     @include border-radius(5px);
+    padding: 30px 40px 30px 40px;
+    @include box-shadow(4px, 4px, 15px, -7px, rgba(87,86,87,1));
+    text-align: center;
+    color: white;
+    h1 {
+        font-size: 36px;
+    }
 }
-
-
 
 
 
@@ -246,15 +202,9 @@ footer {
     border-top: solid gray 1px;
 }
 
-@media screen and (max-width: 400px) {
-    .hero {
+@media screen and (max-width: 500px) {
+     .hero {
         height: auto;
-    }
-    .hero-container {
-        width: 100%;
-    }
-    .map { 
-        display: none;
     }
     
 }
@@ -266,26 +216,25 @@ footer {
     margin: 15px 0 0 0;
     }
     
+    .hero {
+        padding: 70px 0 10px 0;
+    }
+    
+    .hero-container {
+        width: 100%;
+    }
+    .list {
+        h1 {
+        font-size: 18px;
+    }
+    }
+    
     .navlist {
         display: none;
     }
     
     .hamburger {
         display: inline-block;
-    }
-    
-    .map {
-        width: 100%;
-    }
-    
-    .contact-info {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .ion {
-        float: none;
-        margin: 30px auto 0 auto;
     }
     
     .footer-info,

@@ -11,8 +11,35 @@ $(document).ready(function() {
     $(document).click( function(){
         $('.drop-menu').hide();
     });
+    
+    
+    $("#slideshow > div:gt(0)").hide();
+         setInterval(function() { 
+          $('#slideshow> div:first')
+          .fadeOut(1000)
+          .next()
+          .delay(1000)
+            .fadeIn(2000)
+            .end()
+            .delay(1000)
+            .appendTo('#slideshow');
+        },  6000);
 
-});
+        $("#review > div:gt(0)").hide();
+         setInterval(function() { 
+          $('#review > div:first')
+          .fadeOut(1000)
+          .next()
+          .delay(1000)
+            .fadeIn(2000)
+            .end()
+            .delay(1000)
+            .appendTo('#review');
+        },  6000);
+    
+    
+
+    });
 
 $(window).scroll(function() {
   showInfo();

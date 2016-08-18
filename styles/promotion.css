@@ -14,7 +14,8 @@ html {
   width: 100%;
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
-  color: black; }
+  color: black;
+  background-color: #e4f1fe; }
 
 .nav {
   width: 100%;
@@ -113,70 +114,30 @@ html {
 .hero-container {
   display: block;
   position: relative;
-  width: 80%;
+  width: 60%;
   margin: 0 auto; }
 
-.contact-href {
-  color: black; }
-  .contact-href:hover .ion {
-    background-color: black;
-    color: white;
-    cursor: pointer; }
-
-.contact-info {
+.list {
   position: relative;
   display: block;
-  width: 50%;
-  text-align: left;
-  padding: 20px 0;
-  float: left; }
-
-.info {
-  display: inline-block;
+  float: left;
   width: 100%;
-  opacity: 0;
-  transform: scale(0.9) translateY(3rem);
-  -webkit-transform: scale(0.9) translateY(3rem);
-  -moz-transform: scale(0.9) translateY(3rem);
-  transition: 0.2s 0.25s ease-in-out;
-  -webkit-transition: 0.2s 0.25s ease-in-out;
-  -moz-transition: 0.2s 0.25s ease-in-out; }
-
-.show {
-  opacity: 1;
-  transform: scale(1) translateY(0);
-  -webkit-transform: scale(1) translateY(0);
-  -moz-transform: scale(1) translateY(0); }
-
-.info-left {
-  padding: 20px 0 0 0; }
-
-.fix {
-  padding-top: 30px; }
-
-.ion {
-  display: inline-block;
-  text-align: center;
-  font-size: 30px;
-  background-color: white;
-  color: black;
-  border-radius: 50% 50%;
-  display: inline-block;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  margin: 15px 30px 15px 0;
-  float: left; }
-
-.map {
-  float: right;
-  width: 50%;
-  margin: 60px auto;
-  border: white solid 10px;
+  background-color: #eb2351;
+  background: url(../images/promo-simple.jpg) center center no-repeat;
+  background-size: cover;
+  margin: 30px 0;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  padding: 30px 40px 30px 40px;
+  -webkit-box-shadow: 4px 4px 15px -7px #575657;
+  -moz-box-shadow: 4px 4px 15px -7px #575657;
+  box-shadow: 4px 4px 15px -7px #575657;
+  text-align: center;
+  color: white; }
+  .list h1 {
+    font-size: 36px; }
 
 footer {
   background-color: black;
@@ -200,37 +161,29 @@ footer {
 .copyright {
   border-top: solid gray 1px; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .hero {
-    height: auto; }
-
-  .hero-container {
-    width: 100%; }
-
-  .map {
-    display: none; } }
+    height: auto; } }
 @media screen and (max-width: 994px) {
   .logo {
     width: 218px;
     height: 48px;
     margin: 15px 0 0 0; }
 
+  .hero {
+    padding: 70px 0 10px 0; }
+
+  .hero-container {
+    width: 100%; }
+
+  .list h1 {
+    font-size: 18px; }
+
   .navlist {
     display: none; }
 
   .hamburger {
     display: inline-block; }
-
-  .map {
-    width: 100%; }
-
-  .contact-info {
-    width: 100%;
-    text-align: center; }
-
-  .ion {
-    float: none;
-    margin: 30px auto 0 auto; }
 
   .footer-info,
   .footer-hours {
@@ -239,4 +192,4 @@ footer {
   .navlist li {
     padding: 0 8px; } }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=promotion.css.map */
