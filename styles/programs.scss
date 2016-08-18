@@ -164,9 +164,12 @@ td {
 }
 
 footer {
+    position: relative;
+    display: block;
+    width: 100%;
     background-color: black;
     color:gray;
-    padding: 10px;
+    padding: 50px 10px;
     letter-spacing: $letter-spacing;
     line-height: 24px;
 }
