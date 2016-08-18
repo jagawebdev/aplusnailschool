@@ -37,12 +37,15 @@
 .indent60 {
   text-indent: 60px; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 994px) {
   .state-logo {
     width: 280px;
     height: 60px; }
 
   .board {
-    width: 100%; } }
+    width: 90%; } }
+@media (min-width: 995px) and (max-width: 1140px) {
+  .board {
+    width: 70%; } }
 
 /*# sourceMappingURL=_stateboard.css.map */

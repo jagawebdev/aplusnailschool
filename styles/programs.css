@@ -161,7 +161,22 @@ footer {
 .copyright {
   border-top: solid gray 1px; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 18px; }
+
+  td {
+    float: left; }
+
+  .program-list,
+  .inst-list {
+    width: 95%;
+    margin: 60px auto; }
+
+  .list {
+    margin: 10px 0;
+    padding: 20px 20px 20px 20px; } }
+@media screen and (max-width: 994px) {
   .logo {
     width: 218px;
     height: 48px;
@@ -173,23 +188,19 @@ footer {
   .hamburger {
     display: inline-block; }
 
-  h1 {
-    font-size: 18px; }
-
-  td {
-    float: left; }
-
   .program-list,
   .inst-list {
-    width: 90%;
-    margin: 60px auto; }
-
-  .list {
-    margin: 10px 0;
-    padding: 20px 20px 20px 20px; }
+    width: 80%; }
 
   .footer-info,
   .footer-hours {
     width: 100%; } }
+@media (min-width: 995px) and (max-width: 1140px) {
+  .navlist li {
+    padding: 0 8px; }
+
+  .program-list,
+  .inst-list {
+    width: 80%; } }
 
 /*# sourceMappingURL=programs.css.map */

@@ -42,13 +42,16 @@
 .indent60 {
   text-indent: 60px; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 994px) {
   .state-logo {
     width: 280px;
     height: 60px; }
 
   .board {
-    width: 100%; } }
+    width: 90%; } }
+@media (min-width: 995px) and (max-width: 1140px) {
+  .board {
+    width: 70%; } }
 html {
   min-height: 100%;
   min-width: 100%;
@@ -190,8 +193,7 @@ html {
     cursor: pointer;
     background-color: white; }
 
-.board-nav2,
-.board-nav4 {
+.board-nav2 {
   padding-top: 22px; }
 
 .active-nav {
@@ -221,7 +223,13 @@ footer {
 .copyright {
   border-top: solid gray 1px; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
+  .hero-container {
+    width: 100%; } }
+@media screen and (max-width: 840px) {
+  .board-nav {
+    width: 100%; } }
+@media screen and (max-width: 994px) {
   .logo {
     width: 218px;
     height: 48px;
@@ -233,14 +241,14 @@ footer {
   .hamburger {
     display: inline-block; }
 
-  .hero-container {
-    width: 100%; }
-
-  .board-nav {
-    width: 100%; }
-
   .footer-info,
   .footer-hours {
     width: 100%; } }
+@media (min-width: 995px) and (max-width: 1140px) {
+  .navlist li {
+    padding: 0 8px; }
+
+  .hero-container {
+    width: 90%; } }
 
 /*# sourceMappingURL=state.css.map */

@@ -171,8 +171,7 @@ html {
     }
 }
 
-.board-nav2,
-.board-nav4 {
+.board-nav2 {
     padding-top: 22px;
 }
 
@@ -217,9 +216,22 @@ footer {
     border-top: solid gray 1px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     
-    .logo {
+    .hero-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .board-nav {
+    width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 994px) {
+     .logo {
     width: 218px;
     height: 48px;
     margin: 15px 0 0 0;
@@ -233,16 +245,19 @@ footer {
         display: inline-block;
     }
     
-    .hero-container {
-        width: 100%;
-    }
-    
-    .board-nav {
-    width: 100%;
-    }
-    
     .footer-info,
     .footer-hours{
         width: 100%;
     }
+}
+
+@media (min-width: 995px) and (max-width: 1140px) {
+    .navlist li {
+    padding: 0 8px;
+}
+
+.hero-container {
+        width: 90%;
+    }
+    
 }

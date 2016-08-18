@@ -200,7 +200,13 @@ footer {
 .copyright {
   border-top: solid gray 1px; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
+  .hero-container {
+    width: 100%; }
+
+  .map {
+    display: none; } }
+@media screen and (max-width: 994px) {
   .logo {
     width: 218px;
     height: 48px;
@@ -212,25 +218,22 @@ footer {
   .hamburger {
     display: inline-block; }
 
-  .hero-container {
+  .map {
     width: 100%; }
 
   .contact-info {
     width: 100%;
     text-align: center; }
 
-  .map {
-    display: none; }
-
   .ion {
     float: none;
     margin: 30px auto 0 auto; }
 
-  .map {
-    width: 100%; }
-
   .footer-info,
   .footer-hours {
     width: 100%; } }
+@media (min-width: 995px) and (max-width: 1140px) {
+  .navlist li {
+    padding: 0 8px; } }
 
 /*# sourceMappingURL=contact.css.map */
