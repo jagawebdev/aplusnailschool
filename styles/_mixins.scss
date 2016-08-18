@@ -10,3 +10,15 @@
     -moz-box-shadow: $top $left $blur $inset $color;
     box-shadow: $top $left $blur $inset $color;
 }
+
+@mixin transform($scale, $translateY) {
+    transform: $scale $translateY;
+    -webkit-transform: $scale $translateY;
+    -moz-transform: $scale $translateY;
+}
+
+@mixin transition($delay, $duration, $timing-function) {
+    transition: $delay $duration $timing-function;
+    -webkit-transition: $delay $duration $timing-function;
+    -moz-transition: $delay $duration $timing-function;
+}

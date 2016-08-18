@@ -116,16 +116,37 @@ html {
   width: 80%;
   margin: 0 auto; }
 
+.contact-href {
+  color: black; }
+  .contact-href:hover .ion {
+    background-color: black;
+    color: white;
+    cursor: pointer; }
+
 .contact-info {
   position: relative;
   display: block;
   width: 50%;
   text-align: left;
-  padding: 20px 0; }
+  padding: 20px 0;
+  float: left; }
 
 .info {
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  opacity: 0;
+  transform: scale(0.9) translateY(3rem);
+  -webkit-transform: scale(0.9) translateY(3rem);
+  -moz-transform: scale(0.9) translateY(3rem);
+  transition: 0.2s 0.25s ease-in-out;
+  -webkit-transition: 0.2s 0.25s ease-in-out;
+  -moz-transition: 0.2s 0.25s ease-in-out; }
+
+.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  -webkit-transform: scale(1) translateY(0);
+  -moz-transform: scale(1) translateY(0); }
 
 .info-left {
   padding: 20px 0 0 0; }
@@ -146,6 +167,16 @@ html {
   line-height: 55px;
   margin: 15px 30px 15px 0;
   float: left; }
+
+.map {
+  float: right;
+  width: 50%;
+  margin: 60px auto;
+  border: white solid 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
 
 footer {
   background-color: black;
@@ -188,9 +219,15 @@ footer {
     width: 100%;
     text-align: center; }
 
+  .map {
+    display: none; }
+
   .ion {
     float: none;
     margin: 30px auto 0 auto; }
+
+  .map {
+    width: 100%; }
 
   .footer-info,
   .footer-hours {

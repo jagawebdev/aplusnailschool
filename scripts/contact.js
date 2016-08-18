@@ -11,5 +11,18 @@ $(document).ready(function() {
     $(document).click( function(){
         $('.drop-menu').hide();
     });
-
+    
+   showInfo();
 });
+
+function showInfo() {
+    $(".info").each(function(i) {
+        setTimeout(function() {
+             $(".info").eq(i).addClass("show"); 
+        },200 * i);
+      
+    });
+    
+}
+
+ 

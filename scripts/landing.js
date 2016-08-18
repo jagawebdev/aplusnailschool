@@ -13,3 +13,19 @@ $(document).ready(function() {
     });
 
 });
+
+$(window).scroll(function() {
+  showInfo();
+});
+
+function showInfo() {
+   var wScroll = $(window).scrollTop();
+  if($('.program').offset().top - $(window).height() / 2 < wScroll) {
+    $(".list").each(function(i) {
+        setTimeout(function() {
+             $(".list").eq(i).addClass("show"); 
+        },200 * i);
+      
+    });
+  }
+}

@@ -142,17 +142,35 @@ html {
     margin: 0 auto;
 }
 
+.contact-href {
+    color: black;
+    &:hover .ion {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+}
+
 .contact-info {
     position: relative;
     display: block;
     width: 50%;
     text-align: left;
     padding: 20px 0;
+    float: left;
 }
 
 .info {
     display: inline-block;
     width: 100%;
+    opacity: 0;
+    @include transform(scale(0.9), translateY(3rem));
+    @include transition(0.2s, 0.25s, ease-in-out);
+}
+
+.show {
+    opacity: 1;
+    @include transform(scale(1), translateY(0));
 }
 
 .info-left {
@@ -176,6 +194,14 @@ html {
      line-height: 55px;
      margin: 15px 30px 15px 0;
      float: left;
+}
+
+.map {
+    float: right;
+    width: 50%;
+    margin: 60px auto;
+    border: white solid 10px;
+    @include border-radius(5px);
 }
 
 
@@ -245,9 +271,17 @@ footer {
         text-align: center;
     }
     
+    .map { 
+        display: none;
+    }
+    
     .ion {
         float: none;
         margin: 30px auto 0 auto;
+    }
+    
+    .map {
+        width: 100%;
     }
     
     .footer-info,
