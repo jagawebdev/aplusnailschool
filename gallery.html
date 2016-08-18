@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    
+        <title>A+ Nail School</title>
+        <link rel="shortcut icon" href="images/small-logo.jpg" />
+        <link rel="stylesheet" type="text/css" href="styles/gallery.css">
+        
+    </head>
+    <body class="container" ng-app="myApp">
+        <navbar class="nav">
+            <a href="index.html"><div class="logo"></div></a>
+            
+            <div class="navlist">
+                <ul>
+                    <a href="index.html"><li>home</li></a>
+                    <a href="programs.html"><li>Programs</li></a>
+                    <a href="promotion.html"><li>promotion</li></a>
+                    <a href="state.html"><li>state board requirement</li></a>
+                    <a href="gallery.html"><li>gallery</li></a>
+                    <a href="contact.html"><li>contact</li></a>
+                </ul>
+            </div>
+            
+             <a href="#">
+                <div onclick="myFunction()"  class="hamburger ion-android-menu">
+                    <div class="drop-menu">
+                        <ul class="drop-ul">
+                            <a href="index.html" class="drop-link"><li class="drop-li">home</li></a>
+                            <a href="programs.html" class="drop-link"><li class="drop-li">programs</li></a>
+                            <a href="promotion.html" class="drop-link"><li class="drop-li">promotion</li></a>
+                            <a href="state.html" class="drop-link"><li class="drop-li">state board requirement</li></a>
+                            <a href="gallery.html" class="drop-link"><li class="drop-li">gallery</li></a>
+                            <a href="contact.html" class="drop-link"><li class="drop-li">contact</li></a>
+                        </ul>
+                    </div>
+               </div>
+           </a>
+        </navbar>
+        
+        <section class="hero">
+            <div class="hero-container" ng-controller="MainController">
+                <h1>PRACTICES IN A REAL SALON ENVIRONMENT</h1>
+                <div class="list" ng-repeat="product in products">
+                    <img class="list-image" ng-src="{{product.cover}}">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="clearfix"></div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                  <p><strong>Contact</strong><br/>
+                        <p>1137 W. Belmont Ave, Chicago IL 60657<br/>
+                        Call or text: (312) 369-0500<br/>
+                        Call: (773) 388-2193
+                    </p>
+                </div>
+                <div class="footer-hours">
+                  <p><strong>Hours of Operation</strong><br/>
+                        <p>Monday – Friday: 10:00AM – 8:00PM<br/>
+                            Saturday: 10:00AM – 7:00PM <br/>
+                            Sunday: CLOSED
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="copyright">
+                    <p>&#169; 2016 A+ Nail School // Assembled by jagawebdev.com</p>
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+        <script src="scripts/gallery.js"></script>
+    </body>
+</html>
