@@ -374,6 +374,10 @@ h1 {
   background: url(../images/instructor3.png) center center no-repeat;
   background-size: cover; }
 
+.inst4 {
+  background: url(../images/instructor4.png) center center no-repeat;
+  background-size: cover; }
+
 .reviews {
   position: relative;
   display: block;
