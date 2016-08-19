@@ -121,6 +121,9 @@ html {
   background: url(../images/promo-facebook.jpg) center center;
   background-size: cover; }
 
+.promo3 {
+  background-color: #eb2351; }
+
 .slide-title {
   color: white; }
 

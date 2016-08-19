@@ -46,10 +46,14 @@
         
         <section class="hero">
             <div class="hero-container" ng-controller="MainController">
-                <h1>PRACTICES IN A REAL SALON ENVIRONMENT</h1>
-                <div class="list" ng-repeat="product in products">
-                    <img class="list-image" ng-src="{{product.cover}}">
+                
+                <div class="margin">
+                    <h1>PRACTICES IN A REAL SALON ENVIRONMENT</h1>
+                    
                 </div>
+                    <div class="list" ng-repeat="product in products">
+                        <img class="list-image" ng-src="{{product.cover}}">
+                    </div>
             </div>
             <div class="clearfix"></div>
         </section>

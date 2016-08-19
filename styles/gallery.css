@@ -118,6 +118,12 @@ html {
   text-align: center;
   line-height: 36px; }
 
+.margin {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 15px auto 60px auto; }
+
 .list {
   display: inline-block;
   position: relative;
