@@ -16,9 +16,9 @@ $(document).ready(function() {
 });
 
 function showInfo() {
-    $(".info").each(function(i) {
+    $(".list").each(function(i) {
         setTimeout(function() {
-             $(".info").eq(i).addClass("show"); 
+             $(".list").eq(i).addClass("show"); 
         },200 * i);
       
     });

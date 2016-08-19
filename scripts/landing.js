@@ -35,10 +35,7 @@ $(document).ready(function() {
             .delay(1000)
             .appendTo('#reviews');
         },  10000);
-    
-    
-
-    });
+});
 
 $(window).scroll(function() {
   showInfo();

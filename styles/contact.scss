@@ -163,12 +163,18 @@ html {
     width: 280px;
     background-color: white;
     margin: auto;
+    opacity: 0;
     text-align: center;
-    padding: 10px 30px 30px 30px;
+    padding: 10px 20px 30px 20px;
     @include border-radius(5px);
     @include box-shadow(4px, 4px, 15px, -7px, rgba(87,86,87,1));
-    @include transform(scale(0.9), translateY(3rem));
+    @include transform(scale(0.5), translateY(3rem));
     @include transition(0.2s, 0.25s, ease-in-out);
+}
+
+.show {
+    opacity: 1;
+    @include transform(scale(0.9), translateY(0));
 }
 
 .button-title {
@@ -218,14 +224,8 @@ html {
 .info {
     display: inline-block;
     width: 100%;
-    opacity: 0;
     @include transform(scale(0.9), translateY(3rem));
     @include transition(0.2s, 0.25s, ease-in-out);
-}
-
-.show {
-    opacity: 1;
-    @include transform(scale(1), translateY(0));
 }
 
 .info-left {
@@ -316,7 +316,7 @@ footer {
     
     .hero {
         height: auto;
-        padding-top: 60px;
+        padding-top: 100px;
     }
     
     .map {
