@@ -2,7 +2,6 @@
 
 $(document).ready(function() {
   
-  
   $('.hamburger').click( function(event){
         event.stopPropagation();
         $('.drop-menu').toggle();

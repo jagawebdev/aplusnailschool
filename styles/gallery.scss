@@ -44,6 +44,11 @@ html {
     margin: 15px 0 0 20px;
 }
 
+.active-nav-list {
+    border-bottom: solid 3px black;
+    cursor: pointer;
+}
+
 .navlist {
     position: relative;
     display: block;
