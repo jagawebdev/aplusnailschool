@@ -9,53 +9,47 @@
     position: relative;
     width: 100%;
     height: 450px;
-    letter-spacing: $letter-spacing;
-    line-height: 24px;
 }
 
 .promo-slide1 {
     width: inherit;
     height: inherit;
-    background: url(../images/promo-gradient.png) center center;
+    background-color: $banner-gray;
+    background: url(../images/promo-banner.png) center center;
     background-size: cover;
 }
 
 .promo-slide2 {
     width: inherit;
     height: inherit;
-    background: url(../images/promo-facebook.jpg) center center;
+    background-color: $banner-gray;
+    background: url(../images/promo-banner2.png) center center;
     background-size: cover;
 }
 
 .slide-button {
     position: relative;
     width: 270px;
-    margin: 20px auto 0 auto;
-    text-align: center;
-    border: solid white 1px;
+    height: 60px;
+    margin: auto;
+    background-color: $main-pink;
     &:hover {
         cursor: pointer;
-        background-color: white;
-        border: solid white 1px;
-        color: black;
+        background-color: $accent-blue;
     }
-}
-
-.slide-button:hover .slide-title {
-    color: black;
 }
 
 .slide-link {
     text-decoration: none;
-    color: white;
+    color: black;
+    line-height: 60px;
 }
 
 .slide {
     display: inline-block;
-    color: white;
+    color: black;
     text-align: center;
     h1 {
-        text-align: center;
         font-size: 60px;
         line-height: 60px;
         height: 20px;
@@ -309,6 +303,11 @@
 
 
 @media screen and (max-width: 529px) {
+    .promo-slide1,
+    .promo-slide2 {
+        background: none;
+        background-color: $banner-gray;
+    }
    
     .slide1 {
         width: 100%;
@@ -316,30 +315,12 @@
     
     .slide2 {
         margin: 20px auto;
-        width: 300px;
+        width: 100%;
     }
     
     .slide{
         h1 {
             font-size: 36px;
-            color: black;
-        }
-        p{
-            color:black;
-        }
-        .slide-button {
-        border: solid black 1px;
-            &:hover {
-                cursor: pointer;
-                background-color: white;
-                border: solid white 1px;
-            }
-        }
-        .slide-link {
-            color: black;
-        }
-        .slide-button:hover .slide-link {
-            color: black;
         }
     }
     
@@ -366,10 +347,6 @@
     
     .inst-container {
         width: 100%;
-    }
-    
-    .reviews-container {
-        font-size: 16px;
     }
 }
 
@@ -407,16 +384,12 @@
     .list2 {
         float: none;
     }
-    
-    .reviews-container {
-        font-size: 16px;
-    }
 }
 
 @media (min-width: 1000px) and (max-width: 1260px) {
     .slide2 {
     margin: 20px 0;
-}
+    }
 
     .points {
         width: 80%;

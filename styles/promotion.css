@@ -83,15 +83,12 @@ header {
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 530px) and (max-width: 1045px) {
+@media (min-width: 530px) and (max-width: 1060px) {
   .navlist {
     display: none; }
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 1101px) and (max-width: 1260px) {
-  .navlist li {
-    padding: 0 8px; } }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -198,17 +195,9 @@ h3 {
   display: block;
   position: relative;
   width: 80%;
-  margin: auto; }
-
-.list1 {
-  position: relative;
-  display: block;
-  width: 100%;
-  color: white;
-  text-align: center;
-  background: url(../images/promo-simple.jpg) center center no-repeat;
+  margin: auto;
+  background: url(../images/promo-banner3.png) center center no-repeat;
   background-size: cover;
-  padding: 30px 10px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -216,6 +205,14 @@ h3 {
   -webkit-box-shadow: 4px 4px 15px -7px #575657;
   -moz-box-shadow: 4px 4px 15px -7px #575657;
   box-shadow: 4px 4px 15px -7px #575657; }
+
+.list1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  color: black;
+  text-align: left;
+  padding: 30px 25px; }
 
 .big {
   font-size: 36px;
