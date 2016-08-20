@@ -1,139 +1,13 @@
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@import "mixins";
-$letter-spacing: 0.06em;
-$light-blue: #e4f1fe;
-$beige: #f6f6f6;
-$redish: #eb2351;
-
-html {
-    min-height: 100%;
-    min-width:  100%;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    min-height: 100%;
-    width:  100%;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-}
-
-.nav {
-    width: 100%;
-    height: 80px;
-    display: inline-block;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    z-index: 200;
-    
-}
-
-.logo {
-    width: 238px;
-    height: 58px;
-    display: inline-block;
-    background: url(../images/logo.png) center center no-repeat;
-    background-size: cover;
-    margin: 15px 0 0 20px;
-}
-
-.navlist {
-    position: relative;
-    display: block;
-    float: right;
-    margin-right: 30px;
-}
-
-.navlist ul {
-    list-style: none;
-    right: 0;
-}
-
-.navlist li {
-    display: inline-block;
-    text-transform: uppercase;
-    padding: 0 20px;
-    letter-spacing: 0.06em;
-    color: black;
-    line-height: 55px;
-}
-
-.navlist li:last-child {
-    border-right: none;
-}
-
-.navlist li:hover {
-    border-bottom: solid 3px black;
-}
-
-.hamburger {
-    display: none;
-    color: black;
-    font-size: 40px;
-    padding: 20px 20px 0 0;
-    float: right;
-    text-align: right;
-}
-
-.hamburger:hover {
-    cursor: pointer;
-}
-
-.drop-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    line-height: 0;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.drop-ul {
-    background-color: white;
-    list-style:none;
-    padding-left:0;
-}
-
-.drop-li {
-    padding: 20px ;
-}
-
-.drop-link {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: black;
-}
-
-.drop-link:hover {
-    color: black;
-}
-
-.clearfix {
-    clear: both;
-}
+@import "assets/mixins";
+@import "assets/colors";
+@import "assets/header";
+@import "assets/container";
+@import "assets/footer";
 
 .hero {
     display: block;
-    position: relative;
-    width: 100%;
     min-height: 100vh;
     background-color: $light-blue;
-    padding: 130px 0 10px 0;
-    letter-spacing: $letter-spacing;
-    line-height: 24px;
 }
 
 .hero-container, 
@@ -141,44 +15,44 @@ html {
     display: block;
     position: relative;
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
 }
 
-.email-form {
+.salon-quote {
     position: relative;
     display: inline-block;
     width: 50%;
     margin: auto;
-    text-align: center;
-    padding: 3px 30px;
+    text-align: left;
     float: left;
+    h3 {
+        color: $main-pink;
+        font-family: 'Cardo', serif;
+        height: 3px;
+    }
 }
 
-.program-list {
+.email-form {
     display: inline-block;
     width: 50%;
     margin: auto;
 }
 
-.color {
-    font-size: 18px;
-}
-
 form {
-    max-width: 450px;
-    margin: 0 auto 50px auto;
-    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 25px auto;
     input, textarea {
         width: 100%;
         border: solid 1px rgba(0,0,0,0.3);
         padding: 5px;
         &:focus {
-            border: solid 1px $redish;
+            border: solid 1px $main-pink;
         }
     }
     
     [type="submit"] {
-        background-color: black;
+        background-color: $main-pink;
         font-size: 18px;
         color: white;
         letter-spacing: 0.06em;
@@ -186,8 +60,9 @@ form {
         width: 100px;
         padding: 10px;
         cursor: pointer;
+        border: none;
         &:hover {
-            background-color: $redish;
+            background-color: $accent-blue;
         }
     }
 
@@ -203,161 +78,48 @@ form {
             display: block;
         }
     }
-    
 }
 
 .contact-href {
     color: black;
-    &:hover .ion {
-        background-color: black;
-        color: white;
+    &:hover {
+        color: $accent-blue;
         cursor: pointer;
     }
 }
 
-.contact-info {
-    position: relative;
-    display: block;
-    width: 50%;
-    text-align: left;
-    padding: 0 0 30px;
-    float: left;
-}
-
-.info {
-    display: inline-block;
-    width: 100%;
-    @include transform(scale(0.9), translateY(3rem));
-    @include transition(0.2s, 0.25s, ease-in-out);
-}
-
-.info-left {
-    padding: 20px 0 0 0;
-}
-
-.fix {
-    padding-top: 30px;
-}
-
-.ion {
-    display: inline-block;
-    text-align: center;
-     font-size: 30px;
-     background-color: white;
-     color: black;
-     border-radius: 50% 50%;
-     display: inline-block;
-     width: 55px;
-     height: 55px;
-     line-height: 55px;
-     margin: 15px 30px 15px 0;
-     float: left;
-}
-
 .map {
-    float: right;
-    width: 50%;
-    margin: 60px auto;
-    border: white solid 10px;
-    @include border-radius(5px);
-}
-
-footer {
-    position: relative;
-    display: block;
     width: 100%;
-    background-color: black;
-    color:gray;
-    padding: 50px 10px;
-    letter-spacing: $letter-spacing;
-    line-height: 24px;
+    margin: 60px auto 0 auto;
+    border: none;
 }
 
-.footer-content {
-    width: 80%;
-    margin: auto;
+.footer-hero {
+    &:after {
+    border-top: 30px solid $light-blue;
+    }
 }
 
-.footer-info {
-    width: 50%;
-     float: left;
-}
-
-.footer-hours {
-    width:  50%;
-     float: left;
-}
-
-.copyright {
-    border-top: solid gray 1px;
-}
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 529px) {
     .hero-container {
+        width: 100%;
+    }
+    
+    .program {
+        width: 90%;
+    }
+    
+    .salon-quote{
+        width: 100%;
+    }
+    
+    .email-form {
         width: 100%;
     }
     .map { 
         display: none;
     }
-    
-    .email-form {
-        padding: 3px 0 30px;
-    }
-    
 }
 
-@media screen and (max-width: 994px) {
-     .logo {
-    width: 218px;
-    height: 48px;
-    margin: 15px 0 0 0;
-    }
-    
-    .navlist {
-        display: none;
-    }
-    
-    .hamburger {
-        display: inline-block;
-    }
-    
-    .hero {
-        height: auto;
-        padding-top: 100px;
-    }
-    
-    .email-form {
-        width: 100%;
-    }
-    
-    .program-list{
-        width: 100%;
-    }
-    
-    .map {
-        width: 100%;
-    }
-    
-    .contact-info {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .ion {
-        float: none;
-        margin: 30px auto 0 auto;
-    }
-    
-    .footer-info,
-    .footer-hours{
-        width: 100%;
-    }
-}
 
-@media (min-width: 995px) and (max-width: 1140px) {
-    .navlist li {
-    padding: 0 8px;
-}
 
-    
-}

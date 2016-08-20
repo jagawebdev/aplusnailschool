@@ -107,18 +107,12 @@ header {
     }
 }
 
-@media (min-width: 530px) and (max-width: 1100px) {
+@media (min-width: 530px) and (max-width: 1060px) {
     .navlist {
         display: none;
     }
     
     .hamburger {
         display: inline-block;
-    }
-}
-
-@media (min-width: 1101px) and (max-width: 1260px) {
-    .navlist li {
-    padding: 0 8px;
     }
 }
