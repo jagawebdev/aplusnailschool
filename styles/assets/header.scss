@@ -1,0 +1,124 @@
+@import "mixins";
+@import "colors";
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    font-size: 12px;
+    z-index: 200;
+    border-bottom: solid 1px $gray;
+}
+
+
+.navbar {
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 80px;
+    margin: auto;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    width: 218px;
+    height: 55px;
+    margin: 13px 0 13px 10px;
+    background: url(../images/logo.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.navlist {
+    position: relative;
+    display: block;
+    float: right;
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: $letter-spacing;
+            color: black;
+            line-height: 55px;
+        }
+    }
+}
+
+.active-nav-list {
+    border-bottom: solid 2px $main-pink;
+}
+
+.hamburger {
+    display: none;
+    color: black;
+    font-size: 40px;
+    padding: 20px 20px 0 0;
+    float: right;
+    text-align: right;
+    &:hover {
+    cursor: pointer;
+    }
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: 0;
+    margin-top: 30px;
+    text-align: center;
+    ul {
+        background-color: white;
+        list-style:none;
+        padding-left:0;
+        li {
+        padding: 20px ;
+        }
+        a {
+        text-decoration: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: black;
+        &:hover {
+            color: black;
+        }
+        }
+    }
+}
+
+
+@media screen and (max-width: 529px) {
+    .navbar {
+        width: 100%;
+        .navlist {
+            display: none;
+        }
+    }
+    
+    .hamburger {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 1100px) {
+    .navlist {
+        display: none;
+    }
+    
+    .hamburger {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1101px) and (max-width: 1260px) {
+    .navlist li {
+    padding: 0 8px;
+    }
+}

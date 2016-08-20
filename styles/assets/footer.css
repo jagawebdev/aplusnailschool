@@ -1,0 +1,54 @@
+.footer-hero {
+  background-color: black;
+  color: #a8adb0; }
+  .footer-hero:after {
+    border-top: 30px solid white;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    top: 0px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    width: 0;
+    height: 0; }
+
+.footer-container {
+  width: 80%;
+  margin: auto; }
+  .footer-container strong {
+    text-transform: uppercase;
+    color: white; }
+  .footer-container a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none; }
+    .footer-container a:hover {
+      color: #ef626f; }
+
+.salon-facebook {
+  display: block;
+  width: 100%;
+  float: left; }
+
+.salon-info {
+  width: 50%;
+  float: left; }
+
+.salon-hours {
+  width: 50%;
+  float: left; }
+
+.copyright {
+  border-top: solid #a8adb0 1px; }
+
+@media screen and (max-width: 529px) {
+  .salon-info,
+  .salon-hours {
+    width: 100%; } }
+@media (min-width: 530px) and (max-width: 999px) {
+  .salon-info,
+  .salon-hours {
+    width: 100%; } }
+
+/*# sourceMappingURL=footer.css.map */
