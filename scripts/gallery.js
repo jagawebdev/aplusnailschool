@@ -12,6 +12,10 @@ $(document).ready(function() {
     $(document).click( function(){
         $('.drop-menu').hide();
     });
+    
+    $(".list-image").mouseenter(function() {
+      $(".list-image").siblings().addClass("fade");
+    });
 
 });
 
