@@ -198,7 +198,36 @@ h3 {
   margin: auto;
   text-align: center; }
 
+.margin {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 15px auto 60px auto; }
+
+.list {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 300px;
+  margin: 3px 3px;
+  -webkit-box-shadow: 4px 4px 15px -7px #575657;
+  -moz-box-shadow: 4px 4px 15px -7px #575657;
+  box-shadow: 4px 4px 15px -7px #575657;
+  text-align: center; }
+
+.list-image {
+  width: 180px;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
 .footer-hero:after {
   border-top: 30px solid #e4f1fe; }
+
+@media screen and (max-width: 994px) {
+  .hero-container {
+    width: 95%;
+    margin: auto; } }
 
 /*# sourceMappingURL=gallery.css.map */

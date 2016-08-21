@@ -31,7 +31,6 @@ app.controller("MainController",
     {cover: 'images/gallery/pic5.jpg',},
     {cover: 'images/gallery/pic6.jpg',},
     {cover: 'images/gallery/pic7.jpg',},
-    {cover: 'images/gallery/pic8.jpg',},
     {cover: 'images/gallery/pic13.jpg',},
     {cover: 'images/gallery/pic14.jpg',}
     ];
