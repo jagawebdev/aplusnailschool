@@ -18,6 +18,13 @@
     margin: auto;
 }
 
+.map {
+    width: 100%;
+    margin: auto;
+    border: none;
+    margin-bottom: 30px;
+}
+
 .salon-quote {
     position: relative;
     display: inline-block;
@@ -86,12 +93,6 @@ form {
         color: $accent-blue;
         cursor: pointer;
     }
-}
-
-.map {
-    width: 100%;
-    margin: 60px auto 0 auto;
-    border: none;
 }
 
 .footer-hero {

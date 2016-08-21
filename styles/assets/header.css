@@ -4,7 +4,7 @@ header {
   top: 0;
   width: 100%;
   background-color: white;
-  font-size: 12px;
+  font-size: 14px;
   z-index: 200;
   border-bottom: solid 1px #a8adb0; }
 
@@ -83,11 +83,14 @@ header {
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 530px) and (max-width: 1060px) {
+@media (min-width: 530px) and (max-width: 860px) {
   .navlist {
     display: none; }
 
   .hamburger {
     display: inline-block; } }
+@media (min-width: 530px) and (max-width: 1020px) {
+  .navbar {
+    width: 95%; } }
 
 /*# sourceMappingURL=header.css.map */

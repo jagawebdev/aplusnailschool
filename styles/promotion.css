@@ -212,7 +212,7 @@ h3 {
   width: 100%;
   color: black;
   text-align: left;
-  padding: 30px 25px; }
+  padding: 30px 60px; }
 
 .big {
   font-size: 36px;
@@ -223,6 +223,9 @@ h3 {
 
 @media screen and (max-width: 529px) {
   .hero-container {
-    width: 95%; } }
+    width: 95%; }
+
+  .list1 {
+    padding: 10px 25px; } }
 
 /*# sourceMappingURL=promotion.css.map */
