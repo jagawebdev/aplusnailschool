@@ -206,10 +206,7 @@ h3 {
   position: relative;
   width: 180px;
   height: 300px;
-  margin: 3px 3px;
-  -webkit-box-shadow: 4px 4px 15px -7px #575657;
-  -moz-box-shadow: 4px 4px 15px -7px #575657;
-  box-shadow: 4px 4px 15px -7px #575657;
+  margin: 0 2px;
   text-align: center; }
 
 .list-image {
@@ -219,9 +216,8 @@ h3 {
   background-position: center center;
   background-repeat: no-repeat; }
   .list-image:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
     cursor: pointer;
-    border: solid #7ac6cc 10px;
     z-index: 200; }
 
 .fade {
