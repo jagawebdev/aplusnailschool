@@ -83,13 +83,13 @@ header {
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 530px) and (max-width: 860px) {
+@media (min-width: 530px) and (max-width: 880px) {
   .navlist {
     display: none; }
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 530px) and (max-width: 1020px) {
+@media (min-width: 530px) and (max-width: 1040px) {
   .navbar {
     width: 95%; } }
 *, *:after, *:before {
@@ -138,19 +138,11 @@ h3 {
   .main-hero {
     padding: 30px 0; } }
 .footer-hero {
+  position: relative;
+  width: 100%;
+  padding: 30px 10px 15px 10px;
   background-color: black;
   color: #a8adb0; }
-  .footer-hero:after {
-    border-top: 30px solid white;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    top: 0px;
-    content: "";
-    position: absolute;
-    left: 50%;
-    margin-left: -35px;
-    width: 0;
-    height: 0; }
 
 .footer-container {
   width: 80%;
@@ -168,7 +160,9 @@ h3 {
 .salon-facebook {
   display: block;
   width: 100%;
-  float: left; }
+  float: left;
+  padding-bottom: 20px;
+  font-size: 30px; }
 
 .salon-info {
   width: 50%;
@@ -210,19 +204,21 @@ h3 {
 .salon-quote {
   position: relative;
   display: inline-block;
-  width: 50%;
+  width: 40%;
   margin: auto;
   text-align: left;
-  float: left; }
+  padding: 5px 0 0 40px; }
   .salon-quote h3 {
+    text-align: left;
     color: #ef626f;
     font-family: 'Cardo', serif;
     height: 3px; }
 
 .email-form {
   display: inline-block;
-  width: 50%;
-  margin: auto; }
+  width: 60%;
+  margin: auto;
+  float: left; }
 
 form {
   width: 100%;
@@ -260,9 +256,6 @@ form {
     color: #7ac6cc;
     cursor: pointer; }
 
-.footer-hero:after {
-  border-top: 30px solid #e4f1fe; }
-
 @media screen and (max-width: 529px) {
   .hero-container {
     width: 100%; }
@@ -270,13 +263,19 @@ form {
   .program {
     width: 90%; }
 
+  .map {
+    display: none; } }
+@media screen and (max-width: 880px) {
   .salon-quote {
     width: 100%; }
 
   .email-form {
-    width: 100%; }
-
-  .map {
-    display: none; } }
+    width: 100%; } }
+@media (max-width: 1410px) {
+  .seperate {
+    display: table-cell;
+    width: 50%;
+    float: left;
+    padding-left: 20px; } }
 
 /*# sourceMappingURL=contact.css.map */

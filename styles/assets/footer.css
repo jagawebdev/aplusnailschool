@@ -1,17 +1,9 @@
 .footer-hero {
+  position: relative;
+  width: 100%;
+  padding: 30px 10px 15px 10px;
   background-color: black;
   color: #a8adb0; }
-  .footer-hero:after {
-    border-top: 30px solid white;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    top: 0px;
-    content: "";
-    position: absolute;
-    left: 50%;
-    margin-left: -35px;
-    width: 0;
-    height: 0; }
 
 .footer-container {
   width: 80%;
@@ -29,7 +21,9 @@
 .salon-facebook {
   display: block;
   width: 100%;
-  float: left; }
+  float: left;
+  padding-bottom: 20px;
+  font-size: 30px; }
 
 .salon-info {
   width: 50%;

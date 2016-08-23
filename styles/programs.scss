@@ -5,7 +5,7 @@
 @import "assets/footer";
 
 .program {
-    background-color: $light-blue;
+    background-color: $beige;
 }
 
 
@@ -20,13 +20,9 @@
     display: block;
     float: left;
     width: 100%;
-    background-color: white;
-    padding: 30px 40px;
+    background-color: $beige;
+    padding: 0 40px;
     text-align: left;
-    @include box-shadow(4px, 4px, 15px, -7px, rgba(87,86,87,1));
-    h1 {
-        color: $main-pink;
-    }
 }
 
 .table2 {
@@ -41,23 +37,19 @@ td {
     padding-left: 10px;
 }
 
-.footer-hero {
-    &:after {
-    border-top: 30px solid $light-blue;
-    }
-}
-
 @media screen and (max-width: 529px) {
-    .program-list{
-    position: relative;
-    width: 95%;
-    }
-    
-    .list {
-        padding: 0 20px;
+   .list {
+        padding: 0;
     }
     
     td {
     padding-left: 0;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 880px) {
+    .program-list{
+    position: relative;
+    width: 95%;
     }
 }

@@ -137,8 +137,9 @@
     @include box-shadow(4px, 4px, 15px, -7px, rgba(87,86,87,1));
     @include transform(scale(0.9), translateY(3rem));
     @include transition(0.2s, 0.25s, ease-in-out);
-    h3 {
-        color: $main-pink;
+    h1 {
+        font-size: 24px;
+        line-height: 24px;
     }
 }
 
@@ -298,6 +299,21 @@
 
 .dot.active-dot {
     color: $main-pink;
+}
+
+.footer-hero {
+    &:after {
+    border-top: 30px solid white;
+    border-left: 30px solid transparent; 
+    border-right: 30px solid transparent; 
+    top: 0px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    width: 0; 
+    height: 0;
+    }
 }
 
 @media screen and (max-width: 529px) {

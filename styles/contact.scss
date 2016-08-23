@@ -28,11 +28,12 @@
 .salon-quote {
     position: relative;
     display: inline-block;
-    width: 50%;
+    width: 40%;
     margin: auto;
     text-align: left;
-    float: left;
+    padding: 5px 0 0 40px;
     h3 {
+        text-align: left;
         color: $main-pink;
         font-family: 'Cardo', serif;
         height: 3px;
@@ -41,8 +42,9 @@
 
 .email-form {
     display: inline-block;
-    width: 50%;
+    width: 60%;
     margin: auto;
+    float: left;
 }
 
 form {
@@ -95,12 +97,6 @@ form {
     }
 }
 
-.footer-hero {
-    &:after {
-    border-top: 30px solid $light-blue;
-    }
-}
-
 @media screen and (max-width: 529px) {
     .hero-container {
         width: 100%;
@@ -110,6 +106,12 @@ form {
         width: 90%;
     }
     
+    .map { 
+        display: none;
+    }
+}
+
+@media screen and (max-width: 880px) {
     .salon-quote{
         width: 100%;
     }
@@ -117,8 +119,14 @@ form {
     .email-form {
         width: 100%;
     }
-    .map { 
-        display: none;
+}
+
+@media (max-width: 1410px) {
+    .seperate {
+        display: table-cell;
+        width: 50%;
+        float: left;
+        padding-left: 20px;
     }
 }
 
