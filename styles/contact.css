@@ -83,13 +83,13 @@ header {
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 530px) and (max-width: 880px) {
+@media (min-width: 530px) and (max-width: 930px) {
   .navlist {
     display: none; }
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 530px) and (max-width: 1040px) {
+@media (min-width: 530px) and (max-width: 1100px) {
   .navbar {
     width: 95%; } }
 *, *:after, *:before {
@@ -152,8 +152,7 @@ h3 {
     color: white; }
   .footer-container a {
     color: white;
-    cursor: pointer;
-    text-decoration: none; }
+    cursor: pointer; }
     .footer-container a:hover {
       color: #ef626f; }
 
@@ -207,7 +206,7 @@ h3 {
   width: 40%;
   margin: auto;
   text-align: left;
-  padding: 5px 0 0 40px; }
+  padding: 0 0 0 40px; }
   .salon-quote h3 {
     text-align: left;
     color: #ef626f;
@@ -219,6 +218,11 @@ h3 {
   width: 60%;
   margin: auto;
   float: left; }
+  .email-form a {
+    color: black; }
+    .email-form a:hover {
+      cursor: ponter;
+      color: black; }
 
 form {
   width: 100%;

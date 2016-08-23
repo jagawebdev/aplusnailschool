@@ -152,8 +152,7 @@ h3 {
     color: white; }
   .footer-container a {
     color: white;
-    cursor: pointer;
-    text-decoration: none; }
+    cursor: pointer; }
     .footer-container a:hover {
       color: #ef626f; }
 

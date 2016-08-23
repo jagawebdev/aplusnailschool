@@ -83,13 +83,13 @@ header {
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 530px) and (max-width: 880px) {
+@media (min-width: 530px) and (max-width: 920px) {
   .navlist {
     display: none; }
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 530px) and (max-width: 1040px) {
+@media (min-width: 530px) and (max-width: 1090px) {
   .navbar {
     width: 95%; } }
 *, *:after, *:before {
@@ -152,8 +152,7 @@ h3 {
     color: white; }
   .footer-container a {
     color: white;
-    cursor: pointer;
-    text-decoration: none; }
+    cursor: pointer; }
     .footer-container a:hover {
       color: #ef626f; }
 
