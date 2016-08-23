@@ -13,8 +13,6 @@ $(document).ready(function() {
     });
     
    showInfo();
-   
-
 });
 
 function showInfo() {
@@ -26,5 +24,3 @@ function showInfo() {
     });
     
 }
-
- 
