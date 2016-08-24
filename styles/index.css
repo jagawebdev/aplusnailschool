@@ -83,13 +83,13 @@ header {
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 530px) and (max-width: 920px) {
+@media (min-width: 530px) and (max-width: 930px) {
   .navlist {
     display: none; }
 
   .hamburger {
     display: inline-block; } }
-@media (min-width: 530px) and (max-width: 1090px) {
+@media (min-width: 530px) and (max-width: 1100px) {
   .navbar {
     width: 95%; } }
 *, *:after, *:before {
@@ -260,6 +260,9 @@ h3 {
   width: 35%;
   float: left;
   padding-left: 50px; }
+
+.add-on {
+  color: #ef626f; }
 
 .program {
   display: inline-block;
