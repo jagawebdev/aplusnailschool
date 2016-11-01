@@ -264,6 +264,12 @@ h3 {
 .add-on {
   color: #ef626f; }
 
+.new-hero {
+  position: relative;
+  width: 100%;
+  padding: 0px 10px 60px;
+  background-color: #f6f6f6; }
+
 .program {
   display: inline-block;
   background-color: #e4f1fe;
@@ -534,5 +540,17 @@ h3 {
 
   .mission {
     width: 40%; } }
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+.pulse {
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-fill-mode: both; }
 
 /*# sourceMappingURL=index.css.map */
